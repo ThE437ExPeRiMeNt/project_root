@@ -1,15 +1,17 @@
+# main.py
 import os
 import config
 import google_utils
 import github_utils
-import logger
+import logger  # Import the logger module
+from logger import logger # Import the logger instance
 from proxy_manager import ProxyManager
 from captcha_solver import CaptchaSolver
 from dotenv import load_dotenv
 
 load_dotenv()
 
-logger = logger.getLogger(__name__)
+# logger = logger.getLogger(__name__) # Remove this line - it's incorrect
 
 def main():
     print("Welcome to the automated account creation and repository starring script!")
