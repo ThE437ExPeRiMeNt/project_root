@@ -25,4 +25,23 @@
 ## Configuration
 
 Create a `.env` file in the project root directory with the following variables:
+```
+GOOGLE_ACCOUNT_CREATION_ENABLED=False
 
+GITHUB_REPO_URL=https://github.com/owner/repo
+
+GITHUB_TOKEN=<your_github_token>
+
+CAPTCHA_SOLVER_API_KEY=<your_captcha_solver_api_key>  # e.g., 2Captcha API key
+
+GOOGLE_CLOUD_PROJECT_ID=<your_google_cloud_project_id>
+
+PROXY_API_URL=<your_proxy_api_url> #URL Endpoint to obtain Proxy
+```
+
+## Usage
+
+Run the script:
+
+```bash
+python main.py
